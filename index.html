@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Yulia</title>
-    <link rel="stylesheet" type="text/css" href="asset/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <nav>
@@ -17,58 +17,83 @@
                 <li><a href="#">BLOG</a></li> 
                 <li><a href="#">INVENTORY</a></li> 
             </ul>
-        </div>
+        </div>    
     </nav>
-    <br><br>
-    <div class="profil">
-        <table cellpadding="5" align="center" width="950">
+    <br><br><br><br>
+    <div>
+    <div class="profil"><section>
+        <div class="image">
+            <img src="asset/yulia.png" width="160px" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="dataku">
+            <div class="dataku1">
+                <h2  id="text-nama">Yulia Damayanti</h2>
+                <div>
+                    <p id="text-role">Front-End Developer</p>
+                </div>
+                <div>
+                    <button class="button1" id="button1">Edit</button>
+                    <button class="button2" id="button2">Resume</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <div class="tabel">
+        <table cellpadding="5">
             <tr>
-                <td rowspan="5"><img src="asset/yulia.png" width="150"></td>
-                <td rowspan="2"><h2>Yulia Damayanti</h2></td>
-                <td><b>Avability</b></td>
-                <td>: Full Time</td>
+                <td><b>Availablity</b></td>
+                <td style="padding-left: 80px;">:</td>
+                <td id="text-availability">Full Time</td>
             </tr>
             <tr>
                 <td><b>Usia</b></td>
-                <td>: 21</td>
+                <td style="padding-left: 80px;">:</td>
+                <td id="text-usia">21</td>
             </tr>
             <tr>
-                <td>Front-End Developer</td>
                 <td><b>Lokasi</b></td>
-                <td>: Bali</td>
+                <td style="padding-left: 80px;">:</td>
+                <td id="text-lokasi">Bali</td>
             </tr>
             <tr>
-                <td rowspan="2">
-                    <button class="button1"><b>Kirim</b></button>
-                    <button class="button2"><b>Resume</b></button>
-                </td>
                 <td><b>Pengalaman</b></td>
-                <td>: 2</td>
+                <td style="padding-left: 80px;">:</td>
+                <td id="text-pengalaman">3</td>
             </tr>
             <tr>
-                <td><b>email</b></td>
-                <td>: yuliadamayanti2016@gmail.com</td>
+                <td><b>Email</b></td>
+                <td style="padding-left: 80px;">:</td>
+                <td id="text-email">yuliadamaayanti2016@gmail.com</td>
             </tr>
         </table>
-    </div>
-    <div class="form">
-        <form class="content">
-            <label for="nama"><b>Nama</b></label><br>
-            <input type="text" name="nama"><br><br>
-            <label for="role"><b>Role</b></label><br>
-            <input type="text" name="role"><br><br>
-            <label for="availability"><b>Availability</b></label><br>
-            <input type="text" name="availability"><br><br>
-            <label for="usia"><b>Usia</b></label><br>
-            <input type="text" name="usia"><br><br>
-            <label for="lokasi"><b>Lokasi</b></label><br>
-            <input type="text" name="lokasi"><br><br>
-            <label for="experience"><b>Years Experience</b></label><br>
-            <input type="text" name="experience"><br><br>
-            <label for="email"><b>Email</b></label><br>
-            <input type="email" name="email"><br><br>
-            <input type="submit" value="Submit" style="background-color: green; color:white; border: 1px solid green">
-        </form>
-    </div>
+    </div></div>
+
+    <section>
+        <div onsubmit= "validasi()">
+            <form id="form-nama" onsubmit="handleSubmit(event)">
+                <label for="nama"><b>Nama</b></label><br>
+                <input type="text" name="nama" id="input-nama"/><br><br>
+                <label for="role"><b>Role</b></label><br>
+                <input type="text" name="role" id="input-role"/><br><br>
+                <label for="availability"><b>Availability</b></label><br>
+                <input type="text" name="availability" id="input-availability"/><br><br>
+                <label for="usia"><b>Usia</b></label><br>
+                <input type="text" name="usia" id="input-usia"/><br><br>
+                <label for="lokasi"><b>Lokasi</b></label><br>
+                <input type="text" name="lokasi" id="input-lokasi"/><br><br>
+                <label for="experience"><b>Years Experience</b></label><br>
+                <input type="text" name="experience" id="input-pengalaman"/><br><br>
+                <label for="email"><b>Email</b></label><br>
+                <input type="email" name="email" id="input-email"/><br><br>
+                <button type="submit" id="btn-sbmt">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
